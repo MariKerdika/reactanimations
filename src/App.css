@@ -269,3 +269,25 @@ h1.wrap {
 .item img {
   width: 100%;
 }
+.skill {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+.skill-bx {
+  background: #151515;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+.skill h5 {
+  font-size: 45px;
+}
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.skill-bx h2 {
+  margin-bottom: 30px !important;
+}

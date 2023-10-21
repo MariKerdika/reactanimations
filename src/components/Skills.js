@@ -4,6 +4,10 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import html from "../assets/images/html.png";
 import css from "../assets/images/css.png";
+import js from "../assets/images/js.png";
+import react from "../assets/images/react.png";
+import sass from "../assets/images/sass.png";
+import bootstrap from "../assets/images/bootstrap.png";
 
 const Skills = () => {
   const responsive = {
@@ -33,8 +37,8 @@ const Skills = () => {
         <Row>
           <Col>
             <div className="skill-bx">
-              <h2>skills</h2>
-              <p>lorem ipsum</p>
+              <h2>Web Development Skills</h2>
+
               <Carousel
                 responsive={responsive}
                 infinite={true}
@@ -42,23 +46,27 @@ const Skills = () => {
               >
                 <div className="item">
                   <img src={html} alt="html 5"></img>
-                  <h5>Web development</h5>
+                  <h5>HTML 5</h5>
                 </div>
                 <div className="item">
-                  <img src={css} alt="html 5"></img>
-                  <h5>Web development</h5>
+                  <img src={css} alt="Css 3"></img>
+                  <h5>CSS 3</h5>
                 </div>
                 <div className="item">
-                  <img src={html} alt="html 5"></img>
-                  <h5>Web development</h5>
+                  <img src={js} alt="JavaScript ES6"></img>
+                  <h5>ES6</h5>
                 </div>
                 <div className="item">
-                  <img src={html} alt="html 5"></img>
-                  <h5>Web development</h5>
+                  <img src={react} alt="React"></img>
+                  <h5>React</h5>
                 </div>
                 <div className="item">
-                  <img src={html} alt="html 5"></img>
-                  <h5>Web development</h5>
+                  <img src={sass} alt="sass"></img>
+                  <h5>sass</h5>
+                </div>
+                <div className="item">
+                  <img src={bootstrap} alt="bootstrap"></img>
+                  <h5>Bootstrap</h5>
                 </div>
               </Carousel>
             </div>

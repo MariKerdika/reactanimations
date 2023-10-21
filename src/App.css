@@ -266,3 +266,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 h1.wrap {
   color: #fff;
 }
+.item img {
+  width: 100%;
+}

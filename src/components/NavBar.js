@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { PiCode } from "react-icons/pi";
 import { RiMenu4Fill } from "react-icons/ri";
 import { FaFacebook } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { AiFillLinkedin } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 import { useState, useEffect } from "react";
 
@@ -77,7 +77,7 @@ const NavBar = () => {
                 <FaFacebook />
               </a>
               <a href="#">
-                <FaLinkedin />
+                <AiFillLinkedin />
               </a>
               <a href="#">
                 <FaGithub />

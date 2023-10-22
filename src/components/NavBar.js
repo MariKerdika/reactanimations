@@ -6,6 +6,7 @@ import { RiMenu4Fill } from "react-icons/ri";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillLinkedin } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
+import kerdikashvili from "../assets/images/kerdikashvili.pdf";
 import { useState, useEffect } from "react";
 
 const NavBar = () => {
@@ -83,9 +84,9 @@ const NavBar = () => {
                 <FaGithub />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log("connect")}>
-              <span>Let's Connect</span>
-            </button>
+            <a href={kerdikashvili} download className="tagline">
+              Download CV
+            </a>
           </span>
         </Navbar.Collapse>
       </Container>

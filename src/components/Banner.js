@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import headerImg from "../assets/images/header-img.svg";
 import { BsArrowRightSquareFill } from "react-icons/bs";
+import kerdikashvili from "../assets/images/kerdikashvili.pdf";
 
 const Banner = () => {
   return (
@@ -10,9 +11,9 @@ const Banner = () => {
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <h1 className="wrap">Hi! I'm a junior React Developer.</h1>
-            <button className="tagline" onClick={() => console.log("connect")}>
-              Let's connect <BsArrowRightSquareFill />
-            </button>
+            <a href={kerdikashvili} download className="tagline">
+              Download CV
+            </a>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt="header image" />

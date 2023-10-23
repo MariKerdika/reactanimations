@@ -51,50 +51,50 @@ const Projects = () => {
   ];
   const markupProjects = [
     {
-      title: "Portfolio Website",
-      description: "React project with animations",
+      title: "Fitness Website",
+      description: "Responsive Markup",
       imgUrl: fitness,
     },
     {
-      title: "Travel Website",
-      description: "React project with react router",
+      title: "Portfolio Website",
+      description: "Responsive Markup",
       imgUrl: landing,
     },
     {
-      title: "Youtube clone",
-      description: "React project with MUI",
+      title: "Scholarship Website",
+      description: "Responsive Markup",
       imgUrl: scholarship,
     },
     {
-      title: "Pizza Website",
-      description: "React project with styled-components",
+      title: "Bootstrap Template",
+      description: "Responsive Markup",
       imgUrl: bootstraptemplate,
     },
     {
-      title: "animation",
-      description: "React Parallax",
+      title: "StopCov Website",
+      description: "Responsive Markup",
       imgUrl: stopcov,
     },
   ];
   const dnn = [
     {
-      title: "Portfolio Website",
-      description: "React project with animations",
+      title: "Insurance.ge",
+      description: "DNN Project",
       imgUrl: insurance,
     },
     {
-      title: "Travel Website",
-      description: "React project with react router",
+      title: "Is.ge",
+      description: "DNN Project",
       imgUrl: is,
     },
     {
-      title: "Youtube clone",
-      description: "React project with MUI",
+      title: "Fas.ge",
+      description: "DNN Project",
       imgUrl: fas,
     },
     {
-      title: "Pizza Website",
-      description: "React project with styled-components",
+      title: "iec.gov.ge",
+      description: "DNN Project",
       imgUrl: iec,
     },
   ];

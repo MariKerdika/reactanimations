@@ -15,6 +15,7 @@ import fas from "../assets/images/fas.png";
 import iec from "../assets/images/iec.png";
 import insurance from "../assets/images/insurance.png";
 import bootstraptemplate from "../assets/images/bootstraptemplate.png";
+import TrackVisibility from "react-on-screen";
 
 const Projects = () => {
   const projects = [
@@ -103,48 +104,54 @@ const Projects = () => {
       <Container>
         <Row>
           <Col>
-            <h2>MY WORKS</h2>
+            <TrackVisibility>
+              <div className="animate__animated animate__slideInUp">
+                <h2>MY WORKS</h2>
 
-            <Tab.Container id="project-tabs" defaultActiveKey="first">
-              <Nav
-                variant="pills"
-                className="nav-pills mb-5 justify-content-center align-items-center"
-                id="pills-tab"
-              >
-                <Nav.Item>
-                  <Nav.Link eventKey="first">React Projects</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="second">Markup Projects</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="third">DNN projects</Nav.Link>
-                </Nav.Item>
-              </Nav>
-              <Tab.Content>
-                <Tab.Pane eventKey="first">
-                  <Row>
-                    {projects.map((projects, index) => {
-                      return <ProjectCard key={index} {...projects} />;
-                    })}
-                  </Row>
-                </Tab.Pane>
-                <Tab.Pane eventKey="second">
-                  <Row>
-                    {markupProjects.map((markupProjects, index) => {
-                      return <ProjectCard key={index} {...markupProjects} />;
-                    })}
-                  </Row>
-                </Tab.Pane>
-                <Tab.Pane eventKey="third">
-                  <Row>
-                    {dnn.map((dnn, index) => {
-                      return <ProjectCard key={index} {...dnn} />;
-                    })}
-                  </Row>
-                </Tab.Pane>
-              </Tab.Content>
-            </Tab.Container>
+                <Tab.Container id="project-tabs" defaultActiveKey="first">
+                  <Nav
+                    variant="pills"
+                    className="nav-pills mb-5 justify-content-center align-items-center"
+                    id="pills-tab"
+                  >
+                    <Nav.Item>
+                      <Nav.Link eventKey="first">React Projects</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="second">Markup Projects</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="third">DNN projects</Nav.Link>
+                    </Nav.Item>
+                  </Nav>
+                  <Tab.Content>
+                    <Tab.Pane eventKey="first">
+                      <Row>
+                        {projects.map((projects, index) => {
+                          return <ProjectCard key={index} {...projects} />;
+                        })}
+                      </Row>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="second">
+                      <Row>
+                        {markupProjects.map((markupProjects, index) => {
+                          return (
+                            <ProjectCard key={index} {...markupProjects} />
+                          );
+                        })}
+                      </Row>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="third">
+                      <Row>
+                        {dnn.map((dnn, index) => {
+                          return <ProjectCard key={index} {...dnn} />;
+                        })}
+                      </Row>
+                    </Tab.Pane>
+                  </Tab.Content>
+                </Tab.Container>
+              </div>
+            </TrackVisibility>
           </Col>
         </Row>
       </Container>

@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import headerImg from "../assets/images/header-img.svg";
 import { BsArrowRightSquareFill } from "react-icons/bs";
 import kerdikashvili from "../assets/images/kerdikashvili.pdf";
+import "react-animated-css";
 
 const Banner = () => {
   return (

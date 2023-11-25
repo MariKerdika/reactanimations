@@ -74,13 +74,19 @@ const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
+              <a
+                href="https://www.facebook.com/profile.php?id=100069718897965"
+                target="_blank"
+              >
                 <FaFacebook />
               </a>
-              <a href="#">
+              <a
+                href="https://www.linkedin.com/in/marina-kerdikashvili-35a815228/"
+                target="_blank"
+              >
                 <AiFillLinkedin />
               </a>
-              <a href="#">
+              <a href="https://github.com/MariKerdika" target="_blank">
                 <FaGithub />
               </a>
             </div>

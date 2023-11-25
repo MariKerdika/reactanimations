@@ -1,6 +1,8 @@
 import { useState } from "react";
 import contact from "../assets/images/contact-img.svg";
 import { Container, Row, Col } from "react-bootstrap";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 const Contact = () => {
   const formInitialDetails = {
     firstName: "",
@@ -10,7 +12,7 @@ const Contact = () => {
     message: "",
   };
   const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState("send");
+  const [buttonText, setButtonText] = useState("SEND");
   const [Status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
@@ -45,8 +47,10 @@ const Contact = () => {
     <section className="contact" id="contact">
       <Container>
         <Row className="align-items-center">
-          <Col md={6}>
-            <img src={contact} alt="contact us image" />
+          <Col md={6} className="contact-image">
+            <div className="animate__animated animate__slideInUp">
+              <img src={contact} alt="contact us image" />
+            </div>
           </Col>
           <Col md={6}>
             <h2>Get In Touch</h2>
@@ -84,9 +88,8 @@ const Contact = () => {
                     onChange={(e) => onFormUpdate("phone", e.target.value)}
                   />
                 </Col>
-                <Col>
+                <Col sm={6} className="px-1">
                   <textarea
-                    row="6"
                     value={formDetails.message}
                     placeholder="Message"
                     onChange={(e) => onFormUpdate("message", e.target.value)}

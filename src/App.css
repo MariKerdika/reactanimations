@@ -307,6 +307,31 @@ section.banner img {
   position: relative;
   background-color: black;
 }
+.contact-image img {
+  width: 100%;
+}
+.contact {
+  padding: 10rem 0;
+}
+.contact form input {
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+.footer {
+  border-top: 1px solid #ffffff73;
+  padding-top: 10px;
+}
+.contact form textarea {
+  width: 100%;
+  border-radius: 10px;
+}
+.contact form button {
+  padding: 5px 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
 .project h2 {
   font-size: 45px;
   font-weight: 700;
